@@ -11,6 +11,8 @@ class Article(models.Model):
 
     date_created = models.DateTimeField()
 
+    img_url = models.CharField(max_length = 500)
+
     category = models.ForeignKey('Category', blank = True)
     author = models.ForeignKey('User', default = 1)
 
