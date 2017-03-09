@@ -3,4 +3,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse("<h1>This is a website about Norwegian Poker !<h1>")
+    return HttpResponse("<h1>This is the best website about Norwegian Poker!<h1>")
