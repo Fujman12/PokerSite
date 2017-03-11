@@ -1,5 +1,14 @@
+{% if request.user.is_authenticated %}
+
+{% load account %}
+
+Logged as - {% user_display user %}
+{% endif %}
 <ul>
   {% for article in articles %}
   <li><a href="{% url 'article' article.id %}"><strong> {{article.title}} </strong></a> - {{article.summary}}</li>
   {% endfor %}
 </ul>
+<br>
+<p>Ok, let's have some test text out here </p>
+<p>And here is another paragraph. </p>
