@@ -28,7 +28,7 @@ FACEBOOK_APP_SECRET = str('1d67fd1ce0d645b8807246dc423cfc8b')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bb75d651.ngrok.io', 'localhost','7e66247b.ngrok.io']
 
 
 # Application definition
