@@ -9,7 +9,7 @@ import requests
 # Create your views here.
 
 def index(request):
-    graph = facebook.GraphAPI(access_token='EAACEdEose0cBAPIdgzbTsyZBee5EZBV2lFaZBsgn0zJek8ZAyA9cQQk3E7h0jwKDntnE5MygBKIQq7wM8s4WzfjPMQy3yh6mZCp9i5ZAsc1ex3gCisrNEzI084Q0SgjIXQ6hc7ZCQ1andFAvsG1fs6P3kTiadK4ZCGSpGXaQW02ZBLOjpYpXcWZAK61ZAiVNlIocSMZD', version='2.7')
+    graph = facebook.GraphAPI(access_token='EAACEdEose0cBAHAvrc7cuCbatVu0MP1LVkz85tVfFpTWYKZCtfauNtYZCfeWtqk1HyRbUpBVqX58ZCkVbvUSLosLk6kYa9vAIXo3gtQDLpx9iVbsI45MVsT6lJshZAW2hmKWDwZA10svBFyZAqzuraL4tZABD4qsUMMWD7dH3ymMMcht23mU6eBgMKVM8yjeg8ZD', version='2.7')
 
     album = graph.get_object(id='709922575777781', fields = 'photos{images}')
     #print(album)
